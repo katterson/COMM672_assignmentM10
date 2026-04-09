@@ -44,7 +44,87 @@
             Meowtown, CA 90210<br>
             (555) 867-5309
         </address>
-    </section>
+    <main class="container">
+        <p><em>Note: Fields highlighted in Red are required</em></p>
+        <form action="#" method="post" name="contact">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" required placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="fname" required placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label for="ogranization">Organization (if any):</label>
+                <input type="text" name="orgaznization" id="organization" placeholder="Optional">
+            </div>
+             <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" required placeholder="555-555-5555" pattern="[0-9]{3}-[0-9] {3}-[0-9]{4}" title="Format: 555-555-5555">
+            </div>
+            <div class="form-group full-width">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" required placeholder="example@domain.com">
+            </div>
+            <fieldset class="form-group">
+                <legend>Feline Interests</legend>
+                <div class="inline-field">
+                    <input type="checkbox" name="interest" id="interest1" value="interest1">
+                    <label for="interest1">Cat Wellness</label>
+                </div>
+                <div class="inline-field">
+                    <input type="checkbox" name="interest" id="interest2" value="interest2">
+                    <label for="interest2">Cat Training</label>
+                </div>
+                <div class="inline-field">
+                    <input type="checkbox" name="interest" id="interest3" value="interest3">
+                    <label for="interest3">Cat Adoption</label>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label>Your Cat's Lifestyle</label>
+                <div class="inline-field">
+                    <input type="radio" name="lifestyle" id="lifestyle1" value="lifestyle1">
+                    <label for="lifestyle1">Indoor Cat</label>
+                </div>
+                <div class="inline-field">
+                    <input type="radio" name="lifestyle" id="lifestyle2" value="lifestyle2">
+                    <label for="lifestyle2">Outdoor Cat</label>
+                </div>
+                <div class="inline-field">
+                    <input type="radio" name="lifestyle" id="lifestyle3" value="lifestyle3">
+                    <label for="lifestyle3">Both</label>
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <label for="count">How many cats do you have?</label>
+                <select name="count" id="count">
+                    <option value="0">None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4</option>
+                    <option value="5+">I perfer cat lady</option>
+                </select>
+            </div>
+            <div class="form-group full-width">
+                <label for="source">How did you hear about Purrfect Vibes?</label>
+                <select name="source" id="source" multiple size="2">
+                    <option value="social">Social Media</option>
+                    <option value="friend">Friend/Family</option>
+                    <option value="search">Search Engine</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group full-width">
+                <label for="comments">Questions or Purrs?</label>
+                <textarea name="comments" id="comments" rows="3" placeholder="Share your thoughts with us!"></textarea>
+            </div>
+            <input type="submit" value="Submit To Purrfect Vibes">
+        </form>
+    </main class="container">
+     </section>
     <footer>
         <div>
             <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
