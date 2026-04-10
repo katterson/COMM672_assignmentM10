@@ -230,10 +230,12 @@ body.home {
     object-fit: cover;
 }
 /**Contact Page**/
-
+h2 {
+    order: -1;
+}
 form {
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 .full-width {
@@ -293,6 +295,13 @@ footer {
 }
 footer img {
     width: 35px;
+}
+
+.contact-page .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
 }
 
 /**Tablet Styles**/
@@ -437,5 +446,8 @@ footer img {
     form {
         display: flex;
         flex-direction: column;
+    }
+    .contact-page .contact-layout {
+        grid-template-columns: 1fr;
     }
 }
